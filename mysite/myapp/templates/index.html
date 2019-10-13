@@ -1,0 +1,113 @@
+{% load staticfiles%}
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <style media="screen">
+    td{width: 400px;}
+    table {
+
+  </style>
+<link rel="stylesheet" type="text/css" href="{% static 'css/Fashion.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+	<body bgcolor="#E0FFFF">
+<a href="MyTable.xlsx" download>
+<img src="{% static "C:\Users\SIDDHESH VAISH\AppData\Local\Programs\Python\Python37\Scripts\mysite\mysite\static\AudiR8.jpg" %}" height="100" width="100"></a>
+		<table style="width=500" bgcolor="#FFF0F5" cellpadding="10">
+		<tr>
+<td align="center">
+  <button class="button" type="button" data-toggle="dropdown">Home
+<span class="caret"></span></button>
+</td>
+      <td align="center">
+      <div>
+  <div class="dropdown">
+    <button class="button" type="button" data-toggle="dropdown">Change Region
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">Combined Finances</a></li>
+      <li><a tabindex="-1" href="#">Central Government</a></li>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">State Governments<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+  <input type="checkbox" name="AndhraPradesh" value="AP">Andhra Pradesh<br>
+ <input type="checkbox" name="Bihar" value="BH">Bihar<br>
+ <input type="checkbox" name="Chhatisgarh" value="AP">Chhatisgarh<br>
+<input type="checkbox" name="Delhi" value="BH">Delhi<br>
+<input type="checkbox" name="Gujarat" value="AP">Gujarat<br>
+<input type="checkbox" name="Maharashtra" value="BH">Maharashtra<br>
+<input type="checkbox" name="Rajasthan" value="AP">Rajasthan<br>
+<input type="checkbox" name="Odisha" value="BH">Odisha<br>
+<input type="checkbox" name="TamilNadu" value="AP">Tamil Nadu<br>
+<input type="checkbox" name="Telangana" value="BH">Telangana<br>
+<input type="checkbox" name="UttarPradesh" value="AP">Uttar Pradesh<br>
+<input type="checkbox" name="WestBengal" value="BH">West Bengal<br>
+ <input type="submit" value="Check">
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+ </td>
+			<td align="center"> <div>
+  <div class="dropdown">
+    <button class="button" type="button" data-toggle="dropdown">Change Data
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <input type="radio" value="values" name="changedata">Values<br>
+      <input type="radio" value="yoygrowth" name="changedata">YoY growth<br>
+      <input type="radio" value="gdp" name="changedata">Percentage of GDP<br>
+      <input type="radio" value="rebase" name="changedata">Rebase<br>
+    </ul>
+  </div>
+</div>
+			</td>
+			<td align="center"> <div>
+  <div class="dropdown">
+    <button class="button" type="button" data-toggle="dropdown">Export
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <input type="radio" value="csv" name="export">Download CSV<br>
+      <input type="radio" value="jpeg" name="export">Download jpeg<br>
+      <input type="radio" value="share" name="export">Share Link<br>
+      <input type="radio" value="embed" name="export">Embed Code<br>
+    </ul>
+  </div>
+</div>
+			</td>
+			<td align="center"> <div>
+  <div class="dropdown">
+    <button class="button" type="button" data-toggle="dropdown">Help
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <input type="radio" value="bug" name="help">Report Bug CSV<br>
+      <input type="radio" value="feature" name="help">Request Feature<br>
+      <input type="radio" value="incorrectData" name="help">Incorrect Data<br>
+      <input type="radio" value="feedback" name="help">Feedback<br>
+    </ul>
+  </div>
+</div>
+</td>
+		</tr>
+</table><br><br>
+<br>
+<table width="100%" height="100%">
+  <tr><td>
+    <embed align="center" width="1330" height="400" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=C7BE4455EDE9A6B7%211491&authkey=%21AAOwg_rJYdF6c3s&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></embed>
+  </tr>
+  </table>
+  <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+	</body>
+</html>
